@@ -21,8 +21,8 @@ const MainSearchInput = inject("searchStore")(
       <>
         <Container>
           <SearchInput
-            onChange={(e) => searchStore.updateSearch(e.target.value)}
-            onKeyDown={(e) => (e.keyCode == 13 ? getStore() : "")}
+            onChange={(e: any) => searchStore.updateSearch(e.target.value)}
+            onKeyDown={(e: any) => e.keyCode == 13 && getStore()}
             autoFocus
           />
           <SearchInputBtn onClick={() => getStore()}>go</SearchInputBtn>
