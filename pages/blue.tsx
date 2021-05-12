@@ -27,7 +27,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(172 147 234);
+  background-color: #5257f7;
   width: 400px;
   height: 600px;
   border-radius: 200px;
